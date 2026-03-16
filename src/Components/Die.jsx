@@ -1,6 +1,6 @@
-export default function Die({ value }) {
+export default function Die({ value, isheld, hold }) {
   return (
-    <button className="w-10 h-10 shadow-md  rounded flex items-center justify-center font-bold">
+    <button onClick={hold} className={`w-10 h-10 shadow-md  rounded flex items-center justify-center font-bold ${isheld&&"bg-[#59E391]"}`} >
       {value}
     </button>
   )

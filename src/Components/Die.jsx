@@ -1,5 +1,7 @@
-export default function Die(props){
-    return(
-             <button className="p-2 shadow-gray-400 shadow-sm bg-[#59E391]">{props.value}</button>
-    )
+export default function Die({ value }) {
+  return (
+    <button className="w-10 h-10 shadow-md  rounded flex items-center justify-center font-bold">
+      {value}
+    </button>
+  )
 }
